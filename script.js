@@ -7,8 +7,6 @@ let inputDuracao = document.getElementById("duracao");
 let resultado = document.getElementById("resultado")
 
 
-
-
 function calcular() {
     //Pessoas e duração
     let adultos = inputAdultos.value;
