@@ -1,27 +1,31 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Churrascômetro</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
 
 <body>
     <div class="container">
-        <h1>Churrascômetro</h1>
-        <input id="adultos" name="adultos" type="number" placeholder="Adultos">
-        <input id="criancas" name="criancas" type="number" placeholder="Criancas">
-        <input id="duracao" name="duracao" type="number" placeholder="Duracao (h)">
-        <button onclick="calcular()">Calcular</button>
+        <img class="imagem-banner" src="./imagens/banner-churrascometro-v3.png" alt="banner">
+        <div class="box-calculo">
+            <input id="adultos" name="adultos" type="number" placeholder="Adultos">
+            <input id="criancas" name="criancas" type="number" placeholder="Crianças">
+            <input id="duracao" name="duracao" type="number" placeholder="Duração(H)">
+            <button onclick="calcular()">Calcular</button>
+        </div>
 
-        
+        <div class="box-resultado">
+            <h2>Resultado</h2>
+            <label id="resultado"></label>
+        </div>
     </div>
 
-    
-    <div id="resultado"><h1>Resultado</h1></div>
-    
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 
 </body>
+
 </html>

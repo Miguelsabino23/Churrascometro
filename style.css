@@ -1,56 +1,54 @@
-body {
-  background-image: url(./imagens/churrascometro_banner_blog_1200x800-1024x683.webp);
-  background-repeat: no-repeat;
-  display: flex;
-}
-
 .container {
-  max-width: 300px;
-  margin-left: 1040px;
-  background-color: aliceblue;
-  padding: 20px;
-  border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  position: absolute;
+  margin: 0 auto;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-sizing: border-box;
-  border-style: solid;
 }
 
-input {
-  display: block;
-  width: 100%;
+.box-calculo {
+  display: inline-flex;
+  flex-direction: column;
+}
+
+.box-calculo input {
   padding: 5px;
-  box-sizing: border-box;
   margin-bottom: 10px;
+  border: 1px solid grey;
+  box-shadow: 5px 5px 5px grey;
 }
 
-#resultado {
-  max-width: 300px;
-  margin-left: 1040px;
-  margin-top: 300px;
-  background-color: aliceblue;
-  padding: 20px;
-  border-radius: 10px;
-  font-family: Arial, Helvetica, sans-serif;
+.box-calculo button {
+  padding: 8px 5px;
+  font-weight: bold;
+  border: none;
+  background-color: #F9A7B5;
+  box-shadow: 5px 5px 5px grey;
+  transition: 1s;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.box-calculo button:hover {
+  background-color: #FF677B;
+  transition: 1s;
+  cursor: pointer;
+}
+
+.box-resultado {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  box-sizing: border-box;
-  border-style: solid;
+  border: 1px solid grey;
+  margin-top: 30px;
   text-align: center;
+  padding: 10px;
+  box-shadow: 5px 5px 5px grey;
+  background-color: #F9A7B5;
+  flex-direction: column;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
-button {
-  height:auto;
-padding: 10px 0;
-color:#fff;
-font-size:20px;
-text-align:center;
-border-radius:10px;
-border:1px solid #980021;
-box-shadow: inset 0 2px 3px 0 rgba(255,255,255,.3), inset 0 -3px 6px 0 rgba(0,0,0,.2), 0 3px 2px 0 rgba(0,0,0,.2);
-background-image: linear-gradient(to bottom, #cf2b4f, #980021 130%);
+.box-resultado h2 {
+  text-shadow: 2px 2px 1px grey;
 }
