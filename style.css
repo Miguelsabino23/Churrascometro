@@ -36,19 +36,30 @@
 }
 
 .box-resultado {
-  display: flex;
-  border: 1px solid grey;
+  display: none;
   margin-top: 30px;
   text-align: center;
   padding: 10px;
-  box-shadow: 5px 5px 5px grey;
-  background-color: #F9A7B5;
   flex-direction: column;
-  color: white;
+  color: black;
   font-weight: bold;
   text-transform: uppercase;
 }
 
 .box-resultado h2 {
   text-shadow: 2px 2px 1px grey;
+}
+
+#resultado p {
+  margin: 0;
+  padding: 10px;
+  color: white;
+}
+
+#resultado p:nth-child(even) {
+  background-color: #F9A7B5;
+}
+
+#resultado p:nth-child(odd) {
+  background-color: #FF677B;
 }

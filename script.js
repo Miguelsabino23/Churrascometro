@@ -4,7 +4,8 @@ let inputCriancas = document.getElementById("criancas");
 let inputDuracao = document.getElementById("duracao");
 
 //Resultado
-let resultado = document.getElementById("resultado")
+let boxResultado = document.querySelector("div .box-resultado")
+let resultado = document.getElementById("resultado");
 
 
 function calcular() {
@@ -25,6 +26,7 @@ function calcular() {
     } else {
         resultado.innerHTML = `<p>Os valores adultos e duração precisam ser maiores que 0</p>`
     }
+        boxResultado.style.display = "flex"
 }
 
 function carnePP(duracao) {
